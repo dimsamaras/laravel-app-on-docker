@@ -3,7 +3,8 @@
 ### Components
 
 Infrastructure:
-- Docker
+- Docker version 18.09
+- Docker-compose version 1.23, version 3 template
 Stack:
 - Laravel version 5.8
 - PHP version  7.2
