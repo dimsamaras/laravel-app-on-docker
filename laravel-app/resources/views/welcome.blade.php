@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Laravel Demo App</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -68,7 +68,10 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/timeline') }}">Timeline</a>
+                        <a href="{{ url('/profile') }}">My Profile</a>
+                        <a href="{{ url('/postatweet') }}">Post a tweet</a>
+                        <a href="{{ url('/userslist') }}">Users list</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 

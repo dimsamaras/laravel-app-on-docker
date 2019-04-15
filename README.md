@@ -29,7 +29,6 @@ Stack:
     ```
   - Access the API at [localhost](localhost) using PostMan or via your web browser
 
-
 ### Provisioning
 
 #### Infrastructure
@@ -41,4 +40,17 @@ Stack:
     
 #### Data
   - The database is called 'laravel'
-  - Database data will persist in dbdata folder
+  - Database data will persist with docker.
+  
+## TASK 'BASIC'
+Laravel provides built-in user registration and login system with the appropriate middleware. 
+```angular2
+php artisan make:auth
+```
+And since we are on Docker we run:
+```angular2
+docker-compose exec app php artisan make:auth
+```
+This takes care the user login/logout and registration writing on the default laravel 'users' table.
+Also the views and controllers are created.
+ 
