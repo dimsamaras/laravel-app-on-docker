@@ -40,7 +40,7 @@ Stack:
     
 #### Data
   - The database is called 'laravel'
-  - Database data will persist with docker.
+  - Database data will persist with docker local volume.
   
 ## TASK 'BASIC'
 Laravel provides built-in user registration and login system with the appropriate middleware. 
