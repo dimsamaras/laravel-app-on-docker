@@ -14,6 +14,26 @@
                             </div>
                         @endif
                         Post a tweet using the form bellow.
+                            <div class="container">
+
+                                <form method="POST" action="/devicesaction">
+
+                                    {{ csrf_field() }}
+
+                                    <div>
+                                        <label >Tweet text</label>
+                                        <input type="text" name="text" placeholder="280 characters tweet">
+
+                                    </div>
+                                    <div>
+
+                                        <input type="submit" value="Post">
+
+                                    </div>
+
+                                </form>
+
+                            </div>
                     </div>
                 </div>
             </div>
