@@ -13,22 +13,23 @@
                                 {{ session('status') }}
                             </div>
                         @endif
+                        @if($errors->any())
+                            <h4>{{$errors->first()}}</h4>
+                        @endif
                         Post a tweet using the form bellow.
                             <div class="container">
 
-                                <form method="POST" action="/devicesaction">
+                                <form method="POST" action="/postatweet">
 
                                     {{ csrf_field() }}
 
                                     <div>
-                                        <label >Tweet text</label>
+                                        <label>Tweet text</label>
                                         <input type="text" name="text" placeholder="280 characters tweet">
 
                                     </div>
                                     <div>
-
-                                        <input type="submit" value="Post">
-
+                                        <input type="submit" value="Submit">
                                     </div>
 
                                 </form>

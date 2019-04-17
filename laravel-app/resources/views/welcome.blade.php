@@ -70,7 +70,7 @@
                     @auth
                         <a href="{{ url('/timeline') }}">Timeline</a>
                         <a href="{{ url('/profile') }}">My Profile</a>
-                        <a href="{{ url('/postatweet') }}">Post a tweet</a>
+                        <a href="{{ url('/tweet') }}">Post a tweet</a>
                         <a href="{{ url('/userslist') }}">Users list</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>

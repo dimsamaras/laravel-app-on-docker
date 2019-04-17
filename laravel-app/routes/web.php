@@ -18,6 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/timeline', 'TimelineController@index')->name('timeline');
-Route::get('/postatweet', 'TweetsController@index')->name('postatweet');
+Route::get('/tweet', 'TweetsController@index')->name('tweet');
+Route::post('/postatweet', 'TweetsController@postatweet')->name('postatweet');
 Route::get('/profile/{user}', 'ProfileController@show')->name('profile');
 Route::get('/users', 'UsersController@index')->name('users');
