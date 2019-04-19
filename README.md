@@ -36,7 +36,7 @@ Stack:
 
   - Any changes on the infrastructure can be performed on the docker-compose.yml file regarding the source location and ports binding and the containers.
   - MySQL is exposed on port 3306.
-  - NginX listens on port 80.
+  - NginX listens on port 82.
   - Source code is in directory src inside this project and mapped in directory /var/www in the containers.
     
 #### Data
